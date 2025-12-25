@@ -1,0 +1,31 @@
+mode: xlsx  # xlsx or sheets
+
+paths:
+  template_xlsx: ./template.xlsx
+  out_dir: ./out
+  inbox_dir: ./inbox
+  processed_dir: ./processed
+  failed_dir: ./failed
+
+sheets:
+  in_daily: IN_日別
+  in_kw: IN_KW
+
+csv:
+  # 日別CSVの列名（ヘッダ名に合わせる）
+  daily:
+    date: 日付
+    impressions: 表示回数
+    clicks: クリック数
+    cost: 費用
+    applies: 応募数
+    actions: アクション数
+
+  # KW CSVの列名（ヘッダ名に合わせる）
+  kw:
+    keyword: キーワード
+    impressions: 表示回数
+    clicks: クリック数
+    cost: 費用
+    applies: 応募数
+    actions: アクション数
